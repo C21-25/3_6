@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Key Press Event</title>
+</head>
+<body>
+	<input type="text" id="myInput" placeholder="Введіть текст">
+
+<script>
+    // Отримуємо посилання на текстове поле за допомогою його id
+    var myInput = document.getElementById("myInput");
+
+    // Додаємо обробник події для натискання клавіші на текстовому полі
+    myInput.addEventListener("input", function() {
+        console.log("Клавіша була натиснута!");
+    });
+</script>
+</body>
+</html>

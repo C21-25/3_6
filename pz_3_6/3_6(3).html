@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Focus Events</title>
+</head>
+<body>
+	<input type="text" id="myInput" placeholder="Введіть текст">
+    <button id="myButton">Кнопка</button>
+
+<script>
+    // Отримуємо посилання на текстове поле та кнопку за допомогою їх id
+    var myInput = document.getElementById("myInput");
+    var myButton = document.getElementById("myButton");
+
+    // Додаємо обробник події для отримання фокусу текстового поля
+    myInput.addEventListener("focus", function() {
+        console.log("Елемент отримав фокус!");
+    });
+
+    // Додаємо обробник події для втрати фокусу текстового поля
+    myInput.addEventListener("blur", function() {
+        console.log("Елемент втратив фокус!");
+    });
+</script>
+</body>
+</html>
